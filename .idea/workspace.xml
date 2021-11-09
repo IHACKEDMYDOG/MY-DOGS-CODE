@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebc38c40-df23-43d4-92b0-01025f097181" name="Changes" comment="фзф" />
+    <list default="true" id="ebc38c40-df23-43d4-92b0-01025f097181" name="Changes" comment="фзф">
+      <change beforePath="$PROJECT_DIR$/VP/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/VP/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VP/Main.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +60,7 @@
       <workItem from="1636443386632" duration="11000" />
       <workItem from="1636443414883" duration="631000" />
       <workItem from="1636444879326" duration="166000" />
+      <workItem from="1636445107106" duration="49000" />
     </task>
     <task id="LOCAL-00001" summary="фзф">
       <created>1636445001668</created>
