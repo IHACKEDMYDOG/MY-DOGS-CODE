@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+
+
+
+public class main {
+
+    public static void main(String[] args) {
+        List<Boiler> myList = new ArrayList<Boiler>();
+        Boiler boiler = new Boiler("Ariston", 150, 2021);
+        Boiler boiler1 = new Boiler("Samsung", 100, 2003);
+        Boiler boiler2 = new Boiler("Ariston", 150, 2011);
+        myList.add(boiler);
+        myList.add(boiler1);
+        myList.add(boiler2);
+        int a = 0;
+        int power = 0;
+        for (int i = 0; i < myList.size(); i++) {
+            if (myList.get(i).name == "Ariston") {
+                a++;
+                power += myList.get(i).wolt;
+            }
+        }
+        System.out.println("Ariston scolko  = " + a + "\n" + "Obsh energy u know = " + power);
+        myList.sort(new Comparator<Boiler>() {
+            public int compare(Boiler o1, Boiler o2) {
+                // return o2.getYear() - o1.getYear(); //ulkennen bastap
+                return o1.getYear() - o2.getYear(); //kishiden bastap
+            }
+        });
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println("Name = " + myList.get(i).name + "   Voltage =  " + myList.get(i).wolt + "   Year =  " + myList.get(i).year);
+        }
+    }
+
+    public static class Boiler {
+        String name;
+        int wolt;
+        int year;
+
+        public int getYear() {
+            return year;
+        }
+
+        public Boiler(String name, int wolt, int year) {
+            this.name = name;
+            this.wolt = wolt;
+            this.year = year;
+        }
+
+    }
+
+}
